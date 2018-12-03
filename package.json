@@ -1,0 +1,73 @@
+{
+  "name": "oh-my-fullstack",
+  "version": "1.0.0",
+  "description": "Full stack web application skeleton",
+  "keywords": [
+    "skeleton",
+    "starter kit",
+    "boilerplate",
+    "fullstack",
+    "isomorphic",
+    "react",
+    "next",
+    "redux",
+    "rxjs",
+    "ssr"
+  ],
+  "repository": "oh-my-c0de/oh-my-fullstack.git",
+  "author": "DK <kvokovdl@gmail.com>",
+  "license": "Beerware",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon server --exec \"yarn lint && babel-node\"",
+    "build": "yarn build:server && yarn build:client",
+    "build:server": "NODE_ENV=production rimraf .server-dist && babel server -d .server-dist --copy-files",
+    "build:client": "NODE_ENV=production next build",
+    "preprod:start": "yarn build:server && yarn build:client",
+    "prod:start": "NODE_ENV=production pm2 start .server-dist --name \"oh-my-fullstack\" -i max",
+    "prod:stop": "pm2 delete oh-my-fullstack",
+    "prod:restart": "pm2 restart oh-my-fullstack",
+    "lint": "eslint . --ext .js"
+  },
+  "dependencies": {
+    "antd": "^3.10.9",
+    "body-parser": "^1.18.3",
+    "boom": "^7.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "immutable": "^4.0.0-rc.12",
+    "next": "^7.0.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^5.1.1",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.4",
+    "redux-immutable": "^4.0.0",
+    "redux-observable": "^1.0.0",
+    "rxjs": "^6.3.3",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/node": "^7.0.0",
+    "babel-eslint": "^9.0.0",
+    "babel-preset-airbnb": "^3.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.2.0",
+    "nodemon": "^1.18.7",
+    "webpack": "^4.26.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  }
+}
