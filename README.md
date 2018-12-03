@@ -1,5 +1,8 @@
 # Full stack web application skeleton
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/f291fc6ee1ae90ea86b4/maintainability)](https://codeclimate.com/github/oh-my-c0de/oh-my-fullstack/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/f291fc6ee1ae90ea86b4/test_coverage)](https://codeclimate.com/github/oh-my-c0de/oh-my-fullstack/test_coverage)
+
 ## Getting started
 
 1. Clone and install dependencies:
