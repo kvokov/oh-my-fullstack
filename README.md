@@ -35,7 +35,7 @@ $ yarn start
 
 * `$ yarn lint` - Check code linting.
 
-## Local Environment Configuration
+## Local environment configuration
 
 To override configuration variables for local environment create `.env` file in project root with needed variables. Example:
 ```
