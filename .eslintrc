@@ -1,6 +1,10 @@
 {
   "extends": "airbnb",
   "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
   "rules": {
     "max-len": ["error", 150, 2, {
       "ignoreUrls": true,
@@ -10,6 +14,7 @@
       "ignoreTemplateLiterals": true
     }],
     "no-underscore-dangle": 0,
-    "react/jsx-filename-extension": 0
+    "react/jsx-filename-extension": 0,
+    "jsx-a11y/anchor-is-valid": 0
   }
 }

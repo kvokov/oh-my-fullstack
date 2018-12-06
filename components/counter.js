@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import {
-  Card, Button, Icon, Input,
-} from 'antd';
+import Card from 'antd/lib/card';
+import Button from 'antd/lib/button';
+import Icon from 'antd/lib/icon';
+import Input from 'antd/lib/input';
 import { increment, decrement } from '../redux/actions/counter';
 
 const styles = {

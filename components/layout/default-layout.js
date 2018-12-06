@@ -1,33 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Layout } from 'antd';
+import Layout from 'antd/lib/layout';
+import DefaultHeader from './default-header';
+import DefaultFooter from './default-footer';
 
-const { Header, Content, Footer } = Layout;
-
-const styles = {
-  logo: {
-    color: '#fff',
-    fontWeight: 'bold',
-  },
-  footer: {
-    backgroundColor: '#001529',
-    textAlign: 'center',
-    color: '#fff',
-  },
-};
+const { Content } = Layout;
 
 const DefaultLayout = ({ children }) => (
   <Layout>
-    <Header>
-      <div style={styles.logo}>Oh My Code</div>
-    </Header>
+    <DefaultHeader />
     <Content>
       {children}
     </Content>
-    <Footer style={styles.footer}>
-      Oh My Code &copy;
-      {new Date().getFullYear()}
-    </Footer>
+    <DefaultFooter />
   </Layout>
 );
 
