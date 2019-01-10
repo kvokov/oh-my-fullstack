@@ -17,7 +17,7 @@ $ git clone https://github.com/oh-my-c0de/oh-my-fullstack.git ./my-fullstack && 
 $ yarn start
 ```
 
-4. Visit [`localhost:3000`](http://localhost:3000)
+3. Visit [`localhost:3000`](http://localhost:3000)
 
 **That's it!** :sunglasses:
 

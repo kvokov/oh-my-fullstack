@@ -3,11 +3,11 @@ import * as actionTypes from './action-types';
 import { defaultAction } from '.';
 
 export const {
-  increment,
-  decrement,
-  setCounter,
+  getData,
+  setData,
+  setError,
 } = createActions({
-  [actionTypes.INCREMENT]: defaultAction,
-  [actionTypes.DECREMENT]: defaultAction,
-  [actionTypes.SET_COUNTER]: defaultAction,
+  [actionTypes.GET_DATA]: defaultAction,
+  [actionTypes.SET_DATA]: defaultAction,
+  [actionTypes.SET_ERROR]: defaultAction,
 });

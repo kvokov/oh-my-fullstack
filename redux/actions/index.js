@@ -1,2 +1,5 @@
 export * from './counter';
-export * as default from './action-types';
+export * from './api';
+export * from './action-types';
+
+export const defaultAction = payload => payload;

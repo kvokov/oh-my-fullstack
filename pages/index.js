@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { DefaultLayout } from '../components/layout';
 import Counter from '../components/counter';
+import ApiStatus from '../components/api-status';
 
 const styles = {
   wrapper: {
@@ -29,6 +30,7 @@ class Home extends PureComponent {
           <h1>Hello World!</h1>
           <p>{userAgent}</p>
           <Counter />
+          <ApiStatus />
         </div>
       </DefaultLayout>
     );
