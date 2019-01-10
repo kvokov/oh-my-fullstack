@@ -18,7 +18,7 @@
   "author": "DK <kvokovdl@gmail.com>",
   "license": "Beerware",
   "scripts": {
-    "start": "NODE_ENV=development nodemon server --exec \"yarn lint && babel-node\"",
+    "start": "NODE_ENV=development nodemon -w server server -x babel-node",
     "build": "yarn build:server && yarn build:client",
     "build:server": "NODE_ENV=production rimraf .server-dist && babel server -d .server-dist --copy-files",
     "build:client": "NODE_ENV=production next build",

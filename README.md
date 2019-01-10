@@ -42,7 +42,7 @@ To override configuration variables for local environment create `.env` file in 
 NODE_ENV=development
 PORT=3000
 ```
-To find used variables check `config.js` and `server/config.js`.
+To find used variables check `configs/index.js` and `server/config.js`.
 
 
 ## License
