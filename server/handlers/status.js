@@ -1,4 +1,4 @@
-import { name, description, version } from '../../package';
+import { name, description, version } from '../../package.json';
 
 /**
  * Default status handler

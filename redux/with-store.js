@@ -23,7 +23,7 @@ function getOrCreateStore(initialState) {
   /* eslint-enable no-undef */
 }
 
-export default (WrappedComponent) => {
+const withStore = (WrappedComponent) => {
   class WithRedux extends Component {
     static async getInitialProps(appContext) {
       // Get or Create the store with `undefined` as initialState
@@ -62,3 +62,5 @@ export default (WrappedComponent) => {
 
   return WithRedux;
 };
+
+export default withStore;

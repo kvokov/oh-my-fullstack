@@ -6,7 +6,7 @@ import rootEpic from './epics';
 
 const defaultState = Map({});
 
-export default (initialState = defaultState) => {
+const initializeStore = (initialState = defaultState) => {
   /*
   const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__)
     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
@@ -24,3 +24,5 @@ export default (initialState = defaultState) => {
 
   return store;
 };
+
+export default initializeStore;
