@@ -13,7 +13,6 @@ class MyDocument extends Document {
       <html lang="en">
         <Head>
           <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <meta name="google" content="notranslate" />
 
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/3.10.7/antd.min.css" />

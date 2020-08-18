@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import App, { Container } from 'next/app';
+import App from 'next/app';
 import Head from 'next/head';
 import Router from 'next/router';
 import { Provider } from 'react-redux';
@@ -30,14 +30,15 @@ class MyApp extends App {
     const { Component, pageProps, reduxStore } = this.props;
 
     return (
-      <Container>
+      <>
         <Head>
           <title>Oh My Full Stack</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         </Head>
         <Provider store={reduxStore}>
           <Component {...pageProps} />
         </Provider>
-      </Container>
+      </>
     );
   }
 }

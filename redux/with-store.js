@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { isImmutable, fromJS } from 'immutable';
 import initializeStore from './initialize-store';
 
@@ -54,6 +55,10 @@ export default (WrappedComponent) => {
       );
     }
   }
+
+  WithRedux.propTypes = {
+    initialReduxState: PropTypes.shape().isRequired,
+  };
 
   return WithRedux;
 };

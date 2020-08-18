@@ -1,6 +1,6 @@
 import { createActions } from 'redux-actions';
 import * as actionTypes from './action-types';
-import { defaultAction } from '.';
+import { defaultAction } from '../../helpers';
 
 export const {
   getData,
